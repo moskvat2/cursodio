@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: '3'
 
 services:
@@ -10,3 +11,17 @@ services:
     volumes:
       - /root/container/docker-php:/var/www/html
 
+=======
+version: '3'
+
+services:
+  apache:
+    image: 'php:7.4-apache'
+    container_name: apache-php
+    restart: always
+    ports:
+      - '9999:80'
+    volumes:
+      - /root/container/docker-php:/var/www/html
+
+>>>>>>> 600ac9e6fb8b51ce6d2a506b24750cd5a97df584
